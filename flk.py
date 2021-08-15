@@ -20,7 +20,7 @@ api = Api(app)
 
 CORS(app)
 
-@app.route('/obj')
+@app.route('/generatePillData')
 
 
 
@@ -229,4 +229,4 @@ class FaceMeshDetector():
         return img, faces,checkMouth
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="localhost", port=5002)
